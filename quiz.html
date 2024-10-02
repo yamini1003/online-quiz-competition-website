@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
+    <title>Quiz</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <h1>Quiz Competition</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Quiz Container -->
+    <div class="container">
+        <h2>Select a Quiz Category</h2>
+        <div class="quiz-container">
+            <!-- HTML Quiz Card -->
+            <div class="quiz-card">
+                <h3>HTML</h3>
+                <p>40 Questions covering the basics of HTML</p>
+                <button onclick="showQuiz('html')">Start Quiz</button>
+            </div>
+            <!-- CSS Quiz Card -->
+            <div class="quiz-card">
+                <h3>CSS</h3>
+                <p>25 Questions covering the basics of CSS</p>
+                <button onclick="showQuiz('css')">Start Quiz</button>
+            </div>
+            <!-- JavaScript Quiz Card -->
+            <div class="quiz-card">
+                <h3>JavaScript</h3>
+                <p>25 Questions covering the basics of JavaScript</p>
+                <button onclick="showQuiz('javascript')">Start Quiz</button>
+            </div>
+            <!-- SQL Quiz Card -->
+            <div class="quiz-card">
+                <h3>SQL</h3>
+                <p>25 Questions covering the basics of SQL</p>
+                <button onclick="showQuiz('sql')">Start Quiz</button>
+            </div>
+        </div>
+
+        <!-- Quiz Form Section -->
+        <div id="quiz" style="display:none;">
+            <form id="quizForm">
+                <div id="quizQuestions"></div>
+                <button type="submit">Submit Quiz</button>
+            </form>
+            <div id="quiz-result"></div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Online Quiz Competition</p>
+    </footer>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
